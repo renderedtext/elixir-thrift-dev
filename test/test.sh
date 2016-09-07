@@ -7,7 +7,7 @@ for file in $(ls); do
         RETVAL=$?
         if [ ${RETVAL} != 0 ]; then
           echo "Test $file failed! Exiting..."
-          exit 95
+          exit 1
         fi
         echo "\n"
     fi

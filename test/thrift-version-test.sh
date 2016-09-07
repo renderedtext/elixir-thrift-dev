@@ -9,5 +9,5 @@ then
 	exit 0
 else
 	echo "Correct version (0.9.3) is not installed!"
-	exit 95
+	exit 1
 fi
