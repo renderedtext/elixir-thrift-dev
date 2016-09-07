@@ -10,3 +10,5 @@ The following packages are additionally installed:
 * bash
 
 To avoid confusion, Thrift is also installed, but not through a package like the rest are.
+
+It's important to note that the 0.9.3 version of Thrift is installed on the image currently. With the release of a newer version, the Dockerfile and the test checking the Thrift version should be updated accordingly.

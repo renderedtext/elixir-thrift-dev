@@ -1,6 +1,5 @@
 image:
-	docker build -t elixir-thrift .
-	docker run --name et_container -tdi elixir-thrift
+	docker build -t elixir-thrift-dev .
+	docker run --name et_container -tdi elixir-thrift-dev
 test:
-	sh thrift-install-test.sh
-
+	sh test/test.sh
