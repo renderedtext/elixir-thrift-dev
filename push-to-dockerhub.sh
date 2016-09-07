@@ -2,9 +2,7 @@
 
 img_name="renderedtext/elixir-thrift-dev:"
 
-while IFS='' read -r line || [[ -n "${line}" ]]; do
-    img_version=${line}
-done < version
+img_version=$(head -n 1 version)
 
 docker pull "${img_name}${img_version}"
 
