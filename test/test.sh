@@ -21,6 +21,6 @@ if [[ "$ALL_PASSED" == 0 ]]; then
   echo "All tests have passed!"
   exit 0
 else
-  echo "One or more tests have failed!"
+  echo "One or more tests have failed! Check the output to see which ones"
   exit 1
 fi
