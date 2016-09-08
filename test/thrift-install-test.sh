@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Checking if Thrift is successfully installed."
-OUTPUT=$(docker exec -ti et_container sh -c "thrift -version")
+OUTPUT=$(docker exec -ti etd_container sh -c "thrift -version")
 
 if [[ "${OUTPUT}" =~ "/bin/sh: thrift: not found" ]]
 then
