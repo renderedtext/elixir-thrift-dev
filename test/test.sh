@@ -3,10 +3,10 @@
 docker run --name etd_container -tdi renderedtext/elixir-thrift-dev
 
 ALL_PASSED=0
-for FILE in $(ls); do
+for FILE in $(ls test); do
     if [[ "$FILE" != "test.sh" ]]; then
         echo "$FILE"
-        if ! bash $FILE ; then
+        if ! bash "test/$FILE" ; then
           echo "Test $FILE failed!"
           ALL_PASSED=1
         fi
