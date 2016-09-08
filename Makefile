@@ -1,6 +1,6 @@
 image:
-	docker build -t elixir-thrift-dev .
-	docker run --name et_container -tdi elixir-thrift-dev
+	docker build -t renderedtext/elixir-thrift-dev .
+	docker run --name etd_container -tdi renderedtext/elixir-thrift-dev
 test:
 	bash test/test.sh
 release:
