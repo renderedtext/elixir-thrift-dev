@@ -45,3 +45,7 @@ Basically, the image is ran. Then, the files and folders of the elixir app
 directory of the image, where the release is built. After that, the release is
 copied out of the docker image. Then you are free to use the release in another
 Alpine Linux docker image.
+
+Here is a flow chart of the process:
+
+![Build Flow Chart](images/build.png)
